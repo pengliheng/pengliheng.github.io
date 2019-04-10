@@ -162,7 +162,7 @@ Debugger attached.
 Node app is running on port 8088
 ```
 
-![](./src/assets/node.png)
+![](./src/asset/node.png)
 
 ### 看过的书
 
