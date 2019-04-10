@@ -21,13 +21,13 @@
 
 ### TODO
 
--   [x] 引入 jest 单元测试,覆盖率>90%
+-   [x] 引入 jest 单元测试,覆盖率 > 50%
     -   reducer 测试
     -   component 测试
     -   container 测试
--   [ ] `redux-saga` 替代 `redux-thunk`
+-   [x] `redux-saga` 替代 `redux-thunk`
 -   [ ] 将所有组件转化成 `useState` 函数式组件
--   [ ] 引入 typescript, 这样每个组件就都有提示了,非常爽
+-   [ ] 引入 `typescript`, 因为`react`源码全部由 `typescript` 重写了, 这样组件自带签名,无缝对接`react`源码? 类型监控<any>?
 
 ### redux-thunk
 
@@ -72,6 +72,112 @@ Uncaught Error: Actions must be plain objects. Use custom middleware for async a
 -   `<Route />`: 路由匹配核心,匹配则显示的组件
 -   `<Switch />`: 只匹配第一个路由
 -   `exact`, 默认匹配的一个路由
+
+### NodeJs debug
+
+`launch.json` file to set debug config
+
+```json
+{
+    "type": "node",
+    "request": "launch",
+    "name": "nodemon",                                        // 利用nodemon进行自动重启+debug
+    "runtimeExecutable": "nodemon",                           // 运行过程中 可执行文件
+    "cwd": "${workspaceFolder}/bestshareapi",                 // 项目根目录
+    "program": "${workspaceFolder}/bestshareapi/server.js",   // 启动文件位置
+    "restart": true,                                          // 自动重启
+    "console": "integratedTerminal",                          // console.log 控制台信息出现在终端
+    "internalConsoleOptions": "neverOpen"
+},
+```
+
+#### terminal
+
+```bash
+# mac-peng in ~/work/src/www
+❯ cd /Users/pengliheng/work/src/www/bestshareapi ; /usr/local/bin/nodemon --inspect-brk=7385 server.js
+[nodemon] 1.18.9
+[nodemon] to restart at any time, enter `rs`
+[nodemon] watching: *.*
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/1e3add78-ba3c-4530-9baa-d3fc1a204a34
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/fdfe6844-e070-4a94-bfed-12f3a03798ca
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/0e6d234d-3a92-424c-8de3-ab15e8664100
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+
+
+
+
+T123456 undefined
+11111 null { user_id: '1', iat: 1536310399 }
+GET /api/v1/vouchers/describe/ch4nzAbxcfSOHIH 200 46096.419 ms - 77
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/302fd6aa-3a9a-40fd-95fa-deb09868c9cf
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/be50fc6b-db95-4520-912f-f331215d207e
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/8a2628f3-503f-4cb6-b5c3-8d93dedcaee4
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+
+Node app is running on port 8088
+
+
+
+T123456 1
+GET /api/v1/vouchers/describe/ch4nzAbxcfSOHIH 200 457.290 ms - 77
+GET /api/v1/vouchers/rules 404 5.109 ms - 13
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/e1aefd7a-4c7c-4bd4-96db-41a1d084c7a0
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+GET /api/v1/vouchers/rules 404 9.834 ms - 13
+GET /api/v1/vouchers/rules 404 1.056 ms - 13
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/00dc1e40-57d5-4f6e-9834-a378b2947d09
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+
+
+
+express deprecated req.host: Use req.hostname instead <anonymous>:1:49
+GET /api/v1/vouchers/rules 404 618758.694 ms - 13
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/e42047b5-c5e1-4c6d-9577-93e82d40a7ed
+For help, see: https://nodejs.org/en/docs/inspector
+[nodemon] restarting due to changes...
+[nodemon] starting `node --inspect-brk=7385 server.js`
+Debugger listening on ws://127.0.0.1:7385/5ee6f000-601a-4e01-bb01-26011437396d
+For help, see: https://nodejs.org/en/docs/inspector
+Debugger attached.
+Node app is running on port 8088
+```
+
+![](./src/assets/node.png)
 
 ### 看过的书
 
