@@ -1,0 +1,23 @@
+export const FETCH_PENDING: string = 'FETCH_PENGING'
+export const FETCH_RESOLVE: string = 'FETCH_RESOLVE'
+export const FETCH_REJECT: string = 'FETCH_REJECT'
+
+// user
+export const FETCH_USER_INFO: string = 'FETCH_USER_INFO'
+export const FETCH_USER_INFO_SAGA: any = 'FETCH_USER_INFO_SAGA'
+
+// home
+export const FETCH_HOME_PAGE: string = 'FETCH_HOME_PAGE'
+export const FETCH_HOME_PAGE_SAGA: string = 'FETCH_HOME_PAGE_SAGA'
+
+// aticle
+export const FETCH_ARTICLE_LIST: string = 'FETCH_ARTICLE_LIST'
+export const FETCH_ARTICLE_LIST_SAGA: string = 'FETCH_ARTICLE_LIST_SAGA'
+export const FETCH_ARTICLE_DETAIL: string = 'FETCH_ARTICLE_DETAIL'
+export const FETCH_ARTICLE_DETAIL_SAGA: string = 'FETCH_ARTICLE_DETAIL_SAGA'
+
+// repository
+export const FETCH_REPOSITORY_LIST: string = 'FETCH_REPOSITORY_LIST'
+export const FETCH_REPOSITORY_LIST_SAGA: string = 'FETCH_REPOSITORY_LIST_SAGA'
+export const FETCH_REPOSITORY_DETAIL: string = 'FETCH_REPOSITORY_DETAIL'
+export const FETCH_REPOSITORY_DETAIL_SAGA: any = 'FETCH_REPOSITORY_DETAIL_SAGA'
