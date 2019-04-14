@@ -6,7 +6,7 @@
 
 ### 欢迎光临我的博客
 
-###### [本站](https://pipk.top)托管于 Github，所有数据来源于[ISSUE](https://github.com/pengliheng/pengliheng.github.io/issues)，通过 GitHub API 动态加载数据渲染页面。
+###### [本站](https://pipk.top)托管于 Github，所有数据来源于[ISSUE](https://github.com/pengliheng/pengliheng.github.io/issues)，通过 GitHub API v4 动态加载数据渲染页面。
 
 ### 我的技术栈
 
@@ -76,93 +76,26 @@ Uncaught Error: Actions must be plain objects. Use custom middleware for async a
 },
 ```
 
-#### terminal
-
-```bash
-# mac-peng in ~/work/src/www
-❯ cd /Users/pengliheng/work/src/www/bestshareapi ; /usr/local/bin/nodemon --inspect-brk=7385 server.js
-[nodemon] 1.18.9
-[nodemon] to restart at any time, enter `rs`
-[nodemon] watching: *.*
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/1e3add78-ba3c-4530-9baa-d3fc1a204a34
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/fdfe6844-e070-4a94-bfed-12f3a03798ca
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/0e6d234d-3a92-424c-8de3-ab15e8664100
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-
-
-
-
-T123456 undefined
-11111 null { user_id: '1', iat: 1536310399 }
-GET /api/v1/vouchers/describe/ch4nzAbxcfSOHIH 200 46096.419 ms - 77
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/302fd6aa-3a9a-40fd-95fa-deb09868c9cf
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/be50fc6b-db95-4520-912f-f331215d207e
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/8a2628f3-503f-4cb6-b5c3-8d93dedcaee4
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-
-Node app is running on port 8088
-
-
-
-T123456 1
-GET /api/v1/vouchers/describe/ch4nzAbxcfSOHIH 200 457.290 ms - 77
-GET /api/v1/vouchers/rules 404 5.109 ms - 13
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/e1aefd7a-4c7c-4bd4-96db-41a1d084c7a0
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-GET /api/v1/vouchers/rules 404 9.834 ms - 13
-GET /api/v1/vouchers/rules 404 1.056 ms - 13
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/00dc1e40-57d5-4f6e-9834-a378b2947d09
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-
-
-
-express deprecated req.host: Use req.hostname instead <anonymous>:1:49
-GET /api/v1/vouchers/rules 404 618758.694 ms - 13
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/e42047b5-c5e1-4c6d-9577-93e82d40a7ed
-For help, see: https://nodejs.org/en/docs/inspector
-[nodemon] restarting due to changes...
-[nodemon] starting `node --inspect-brk=7385 server.js`
-Debugger listening on ws://127.0.0.1:7385/5ee6f000-601a-4e01-bb01-26011437396d
-For help, see: https://nodejs.org/en/docs/inspector
-Debugger attached.
-Node app is running on port 8088
-```
-
 ![](./src/asset/node.png)
+
+#### quickSort 最简单手写方式 ES6 版本
+
+| 复杂度 |   最少   | 最多 |
+| :----: | :------: | :--: |
+|  空间  |  log2n   | n-1  |
+|  时间  | O(nlogn) | O(n) |
+
+```js
+cosnt qk = arr => {
+    if (!arr.length) return []
+    const [point, ...right] = arr
+    return [
+        ...qk(arr.filter(item=>item<point)),
+        point,
+        ...qk(arr.filter(item=>item>point))
+    ]
+}
+```
 
 ### 看过的书
 
