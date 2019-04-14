@@ -78,7 +78,7 @@ Uncaught Error: Actions must be plain objects. Use custom middleware for async a
 
 ![](./src/asset/node.png)
 
-#### quickSort 最简单手写方式 ES6 版本
+### QuickSort 最简单手写方式 ES6 版本
 
 | 复杂度 |   最少   | 最多 |
 | :----: | :------: | :--: |
