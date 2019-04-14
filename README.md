@@ -101,7 +101,27 @@ cosnt qk = arr => {
 
 ```jsx
 <p>{child1}{child2}<p>
-React.createElement(标签名, props, child1, child2)
+React.createElement(标签名/自定义组件变量, props, child1, child2)
+```
+
+### `react`组件两种写法
+
+```jsx
+// 推荐的写法
+// 自动在 shouldcomponentupdate 优化
+// 组件是函数
+function list({ list }) {
+  return list.map(item => <li>{item}</li>)
+}
+// 不推荐的写法
+// 需要手动在 shouldcomponentupdate 中优化
+// 组件是对象
+class list extends Component {
+  render() {
+    const { list } = this.props
+    return list.map(item => <li>{item}</li>)
+  }
+}
 ```
 
 ### SSR
