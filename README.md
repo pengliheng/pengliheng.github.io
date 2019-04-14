@@ -62,7 +62,7 @@ Uncaught Error: Actions must be plain objects. Use custom middleware for async a
 
 `launch.json` file to set debug config
 
-```json
+```js
 {
     "type": "node",
     "request": "launch",
