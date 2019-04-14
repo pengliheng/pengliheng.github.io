@@ -97,6 +97,21 @@ cosnt qk = arr => {
 }
 ```
 
+### Jsx => js
+
+```jsx
+<p>{child1}{child2}<p>
+React.createElement(标签名, props, child1, child2)
+```
+
+### SSR
+
+想要服务端渲染自然绕不开`nodejs`,但他不完善,不支持`import`/`export`,所以呢,建议用上`ts-node-dev`来运行,很好支持 es6 语法.
+`renderToString`,`react-view`是服务端渲染的核心,实际上他们`react-dom`的核心函数,从一开始 react 就支持两种渲染模式,
+
+- 转换成字符串 - nodejs 端输出模板字符串
+- 转换成 Object 对象的 DOM 元素 - 浏览器端输出真实对象
+
 ### 看过的书
 
 - [x] [网络是怎样连接的](https://book.douban.com/subject/26941639/) - [笔记](https://github.com/pengliheng/pengliheng.github.io/issues/40)
