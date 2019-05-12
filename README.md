@@ -21,7 +21,7 @@
 
 ### 一句话介绍我自己
 
-没事就喜欢研究各种套路,包括不限于[算法](<[./chat.md](https://github.com/pengliheng/leetcode)>),[聊天](./chat.md),[面试](<[./chat.md](https://github.com/pengliheng/pengliheng.github.io/issues/25)>), 自从有了套路,腰不酸腿不痛.
+没事就喜欢研究各种套路,包括不限于[算法](<[./chat.md](https://github.com/pengliheng/leetcode)>),[聊天](./chat.md),[面试](<[./chat.md](https://github.com/pengliheng/pengliheng.github.io/issues/25)>),[网络](https://github.com/pengliheng/pengliheng.github.io/issues/40) ,自从有了套路,腰不酸腿不痛,人也变懒了.
 
 ### 看过的书
 
