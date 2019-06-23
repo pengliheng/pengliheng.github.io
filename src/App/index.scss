@@ -1,0 +1,31 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  .App-header {
+    flex: 0 0 10vh;
+    background-color: #282c34;
+    font-size: calc(10px + 2vmin);
+    color: white;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+
+    span {
+      padding: 3px;
+      border: 1px solid #fff;
+      border-radius: 5px;
+    }
+    span+span {
+      margin-left: 10px;
+    }
+  }
+  .App-layout {
+    flex: 1 0 auto;
+    overflow: auto;
+  }
+}
+
+

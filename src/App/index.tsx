@@ -1,22 +1,29 @@
 import React from 'react';
-import './index.styl';
 
-// const HeaderStyle: any = {
-//   backgroundColor: "#282c34",
-//   minHeight: "10vh",
-//   display: "flex",
-//   flexDirection: "column",
-//   alignItems: "center",
-//   justifyContent: "center",
-//   fontSize: "calc(10px + 2vmin)",
-//   color: "white",
-// };
+import { useRoutes } from "hookrouter";
+
+import HomePage from "../component/Home";
+import NotFoundPage from "../component/NotFoundPage";
+
+import './index.scss';
+
+const routes = {
+  "/": () => <HomePage />,
+};
 
 const App: React.FC = () => {
+  const routeResult = useRoutes(routes);
   return (
-    <div>
-      <header className="App-header">header</header>
-      <div className="App-layout">layout</div>
+    <div className="App">
+      <header className="App-header">
+        <span>首页</span>
+        <span>写的文章</span>
+        <span>看过的书</span>
+        <span>做过的项目</span>
+      </header>
+      <div className="App-layout">
+        { routeResult||<NotFoundPage/> }
+      </div>
     </div>
   );
 }
