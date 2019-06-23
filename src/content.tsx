@@ -1,4 +1,4 @@
-import * as React from 'react'
+import React from 'react'
 import { Route, Switch } from 'react-router-dom'
 import catchErrorDecorator from './decorators/catchErrorDecorator'
 import routes from './routes/index'
@@ -11,4 +11,4 @@ class Content extends React.Component<any, any> {
     return <Switch>{routesComponent}</Switch>
   }
 }
-export default catchErrorDecorator(Content)
+export default catchErrorDecorator(Content as any)

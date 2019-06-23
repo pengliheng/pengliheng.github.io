@@ -1,6 +1,6 @@
 import axios from 'axios'
 
-export default class AxiosOrLocal {
+class AxiosOrLocal {
   key: any
   type: string
   url: any
@@ -12,7 +12,6 @@ export default class AxiosOrLocal {
     this.url = url
     this.method = method
     this.data = data
-    return this.get()
   }
   set({ data }: any) {
     if (this.type === 'localStorage') {
@@ -38,7 +37,7 @@ export default class AxiosOrLocal {
       })
     } else {
       // 为了避免副作用,应该让他们都是异步的
-      return await axios({
+      return axios({
         data: this.data,
         method: this.method,
         url: this.url,
@@ -54,3 +53,5 @@ export default class AxiosOrLocal {
     }
   }
 }
+
+export default AxiosOrLocal as any

@@ -1,7 +1,7 @@
 import axios from 'axios'
 import * as React from 'react'
 import Loading from '../components/Loading/index'
-export default (WrappedComponent: React.Component) => {
+export default (WrappedComponent: any) => {
   return class extends React.Component {
     constructor(props: object) {
       super(props)

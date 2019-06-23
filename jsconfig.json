@@ -1,14 +1,20 @@
 {
   "compilerOptions": {
-		"experimentalDecorators": true,
+    "experimentalDecorators": true,
     "baseUrl": "./",
     "paths": {
-      "@/*": ["src/*"],
+      "@/*": ["src/*"]
       // "@root/*": ["*"],
       // "@utils/*": ["src/utils/*"],
       // "@reduxs/*": ["src/redux-relate/*"],
     },
+    "outDir": "./dist/",
+    "sourceMap": true,
+    "noImplicitAny": true,
+    "module": "commonjs",
+    "target": "es6",
+    "jsx": "react"
   },
   "exclude": ["node_modules", "dist"],
-  "include": ["src"]
+  "include": ["./src/**/*"]
 }
