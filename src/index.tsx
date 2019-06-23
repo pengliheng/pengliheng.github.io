@@ -1,18 +1,9 @@
-import 'github-markdown-css'
-import * as React from 'react'
-import * as ReactDOM from 'react-dom'
-// import { Provider } from 'react-redux'
+import React from 'react';
+import ReactDOM from 'react-dom';
+import './index.css';
+import App from './App/index';
+import * as serviceWorker from './serviceWorker';
 
-// import App from './App'
-import './asset/font-icons/fonts.scss'
-import './common/index.scss'
-import './common/markdown.css'
-// import store from './redux-relate/store/index'
-// lazy(import('github-markdown-css'))
+ReactDOM.render(<App />, document.getElementById('root'));
 
-ReactDOM.render(
-  // <Provider store={store}>
-  <img />,
-  // </Provider>,
-  document.getElementById('root'),
-)
+serviceWorker.unregister();

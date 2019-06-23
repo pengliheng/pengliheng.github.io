@@ -1,66 +1,44 @@
-#
+This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-[![Build Status](https://travis-ci.org/pengliheng/pengliheng.github.io.svg?branch=master)](https://travis-ci.org/pengliheng/pengliheng.github.io)
-[![author](https://img.shields.io/badge/author-peng-blue.svg)](https://github.com/pengliheng/pengliheng.github.io)
-[![Node.js Version](https://img.shields.io/badge/node.js-8.7.0-blue.svg)](http://nodejs.org/download)
-[![Size](https://github-size-badge.herokuapp.com/pengliheng/pengliheng.github.io.svg)](https://github.com/pengliheng/pengliheng.github.io)
-[![tested with jest](https://img.shields.io/badge/tested_with-jest-99424f.svg)](https://github.com/pengliheng/pengliheng.github.io)
+## Available Scripts
 
-## 欢迎光临我的博客
+In the project directory, you can run:
 
-### [本站](https://pipk.top)托管于 Github，所有数据来源于[ISSUE](https://github.com/pengliheng/pengliheng.github.io/issues)，通过 GitHub API v4 动态加载数据渲染页面。
+### `npm start`
 
-### 我的技术栈
+Runs the app in the development mode.<br>
+Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
-- JavaScript(React Vue)
-- Node
-- HTTP(http1.1 https http2)
-- RegExp
-- Nginx
-- Python
+The page will reload if you make edits.<br>
+You will also see any lint errors in the console.
 
-### 一句话介绍我自己
+### `npm test`
 
-没事就喜欢研究各种套路,包括不限于[算法](<[./chat.md](https://github.com/pengliheng/leetcode)>),[聊天](./chat.md),[面试](<[./chat.md](https://github.com/pengliheng/pengliheng.github.io/issues/25)>),[网络](https://github.com/pengliheng/pengliheng.github.io/issues/40) ,自从有了套路,腰不酸腿不痛,人也变懒了.
+Launches the test runner in the interactive watch mode.<br>
+See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### 看过的书
+### `npm run build`
 
-- [x] [网络是怎样连接的](https://book.douban.com/subject/26941639/) - [笔记](https://github.com/pengliheng/pengliheng.github.io/issues/40)
+Builds the app for production to the `build` folder.<br>
+It correctly bundles React in production mode and optimizes the build for the best performance.
 
-![image](https://static.pipk.top/api/public/images/6075462533216409.png)
+The build is minified and the filenames include the hashes.<br>
+Your app is ready to be deployed!
 
----
+See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
 
-- [x] [HTTP 权威指南](https://book.douban.com/subject/10746113/) - [笔记一](https://github.com/pengliheng/pengliheng.github.io/issues/45) - [笔记二](https://github.com/pengliheng/pengliheng.github.io/issues/52)
+### `npm run eject`
 
-![image](https://static.pipk.top/api/public/images/2376380500856452.png)
+**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
 
----
+If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
 
-- [x] [JavaScript 面向对象精要](https://book.douban.com/subject/26352658/) - [笔记一](https://github.com/pengliheng/pengliheng.github.io/issues/29) - [笔记二](https://github.com/pengliheng/pengliheng.github.io/issues/31)
+Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
-![image](https://static.pipk.top/api/public/images/7833702919612766.png)
+You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
----
+## Learn More
 
-- [x] [现代前端技术解析](https://book.douban.com/subject/27021790/) - [笔记一](https://github.com/pengliheng/pengliheng.github.io/issues/28) - [笔记二](https://github.com/pengliheng/pengliheng.github.io/issues/58)
+You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
----
-
-- [x] [深入理解 ES6](https://book.douban.com/subject/27072230/) - [笔记一](https://github.com/pengliheng/pengliheng.github.io/issues/32) - [笔记二](https://github.com/pengliheng/pengliheng.github.io/issues/51)
-
----
-
-- [x] [ES6 标准入门](https://book.douban.com/subject/26708954/) - [笔记一](https://github.com/pengliheng/pengliheng.github.io/issues/23) - [笔记二](https://github.com/pengliheng/pengliheng.github.io/issues/26)
-
----
-
-- [x] [高性能的 JavaScript](https://book.douban.com/subject/5362856/) - [笔记](https://github.com/pengliheng/pengliheng.github.io/issues/15)
-
----
-
-- [x] [JavaScript 语言精粹](https://book.douban.com/subject/3590768/) - [笔记](https://github.com/pengliheng/pengliheng.github.io/issues/10)
-
----
-
-- [x] [数据结构与算法 JavaScript 描述](https://book.douban.com/subject/25945449/) - [笔记](https://github.com/pengliheng/pengliheng.github.io/issues/6)
+To learn React, check out the [React documentation](https://reactjs.org/).
